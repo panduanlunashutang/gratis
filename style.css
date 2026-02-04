@@ -68,8 +68,8 @@ body {
 
 .light-anim {
   position:absolute;
-  inset:-40px;
-  background:radial-gradient(circle,rgba(34,197,94,.45),transparent 70%);
+  inset:-50px;
+  background:radial-gradient(circle, rgb(22 163 74), transparent 70%)
   filter:blur(30px);
   animation:lightPulse 4s infinite;
 }
@@ -227,6 +227,7 @@ body {
   color:#fff;
   cursor:pointer;
 }
+
 
 
 
