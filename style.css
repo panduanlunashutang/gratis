@@ -20,7 +20,7 @@ body {
 }
 
 .hero {
-  padding:30px 16px 30px;
+  padding:30px 16px 5px;
   text-align:center;
 }
 
@@ -227,5 +227,6 @@ body {
   color:#fff;
   cursor:pointer;
 }
+
 
 
