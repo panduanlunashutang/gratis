@@ -19,7 +19,6 @@ body {
   100%{background-position:0% 50%}
 }
 
-/* HERO */
 .hero {
   padding:60px 16px 30px;
   text-align:center;
@@ -48,7 +47,6 @@ body {
 
 .highlight { color:#22c55e }
 
-/* IMAGE */
 .hero-image {
   position:relative;
   width:280px;
@@ -64,8 +62,8 @@ body {
 .hero-image img {
   width:100%;
   border-radius:20px;
-  position:relative;
   z-index:2;
+  position:relative;
 }
 
 .light-anim {
@@ -81,7 +79,6 @@ body {
   50%{opacity:1}
 }
 
-/* BUTTON */
 .cta-btn {
   margin-top:20px;
   padding:16px 30px;
@@ -147,7 +144,7 @@ body {
 }
 
 .live-list {
-  height:230px;
+  height:240px;
   overflow:hidden;
 }
 
@@ -166,17 +163,13 @@ body {
   to{opacity:1;transform:translateY(0)}
 }
 
-/* AVATAR */
-.avatar {
-  width:36px;
-  height:36px;
+.avatar-img {
+  width:40px;
+  height:40px;
   border-radius:50%;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-weight:700;
-  color:#fff;
+  object-fit:cover;
   flex-shrink:0;
+  border:2px solid rgba(34,197,94,.6);
 }
 
 .live-content strong {
