@@ -1,8 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-  const ctaBtn = document.getElementById("ctaBtn");
-  ctaBtn.addEventListener("click", () => {
-    window.open("https://contoh-link-kamu.com", "_blank");
+  document.getElementById("ctaBtn").addEventListener("click", () => {
+    window.open("https://link-panduan-kamu.com", "_blank");
   });
 
   const track = document.getElementById("liveTrack");
@@ -14,18 +13,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const messages = [
     "Alhamdulillah, hutang 200jt yang terasa mustahil akhirnya lunas.",
-    "Saya cuma ikuti panduannya pelan-pelan, hasilnya nyata.",
-    "Akhirnya bisa tidur tenang tanpa dikejar hutang.",
-    "Awalnya ragu, tapi karena halal saya coba. Allah mudahkan.",
-    "Bukan janji, tapi langkahnya jelas dan masuk akal."
+    "Saya ikuti panduannya pelan-pelan, hasilnya nyata.",
+    "Akhirnya bisa tidur tenang tanpa beban hutang.",
+    "Awalnya ragu, tapi karena halal saya jalani. Allah mudahkan.",
+    "Langkahnya jelas, bukan janji kosong."
   ];
 
   function randomTime() {
-    const t = Math.floor(Math.random() * 90) + 10;
-    return `${t} detik lalu`;
+    const sec = Math.floor(Math.random() * 90) + 10;
+    return `${sec} detik lalu`;
   }
 
-  function createTesti() {
+  function createTestimoni() {
     const item = document.createElement("div");
     item.className = "live-item";
     item.innerHTML = `
@@ -40,6 +39,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  for (let i = 0; i < 4; i++) createTesti();
-  setInterval(createTesti, 4000);
+  for (let i = 0; i < 4; i++) createTestimoni();
+  setInterval(createTestimoni, 4000);
 });
