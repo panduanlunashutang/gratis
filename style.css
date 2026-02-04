@@ -276,6 +276,11 @@ body {
   cursor:pointer;
 }
 
+.avatar-img {
+  filter: blur(1.5px);
+  transition: filter .3s ease;
+}
+
 
 
 
