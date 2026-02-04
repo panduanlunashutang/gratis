@@ -27,7 +27,7 @@ body {
 .glow-title {
   font-size:2.6rem;
   font-weight:900;
-  margin-bottom:16px;
+  margin-bottom: 5px;
   text-shadow:0 0 18px rgba(34,197,94,.8);
   animation:blinkGlow 3s infinite;
 }
@@ -227,6 +227,7 @@ body {
   color:#fff;
   cursor:pointer;
 }
+
 
 
 
