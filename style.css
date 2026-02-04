@@ -248,6 +248,9 @@ body {
       0 0 30px rgba(34,197,94,.6);
   }
 }
+.modal.show .celebrate {
+  animation-delay: .2s;
+}
 
 .download-btn {
   display:block;
@@ -272,6 +275,7 @@ body {
   color:#fff;
   cursor:pointer;
 }
+
 
 
 
