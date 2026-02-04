@@ -6,17 +6,26 @@ document.addEventListener("DOMContentLoaded", () => {
   const modal = document.getElementById("modal");
   const closeModal = document.querySelector(".close-modal");
 
-  cta.onclick = () => {
-    clickCount++;
-    clickCount === 1
-      ? window.open("https://s.shopee.co.id/3B1fet28qi","_blank")
-      : modal.style.display = "flex";
-setTimeout(() => {
-  modal.classList.add("show");
-  boomConfetti();
-}, 50);
-  };
-  closeModal.onclick = () => modal.style.display = "none";
+cta.onclick = () => {
+  clickCount++;
+
+  if (clickCount === 1) {
+    window.open("https://s.shopee.co.id/3B1fet28qi", "_blank");
+  } else {
+    modal.style.display = "flex";
+
+    setTimeout(() => {
+      modal.classList.add("show");
+      boomConfetti();
+    }, 50);
+  }
+};
+
+  closeModal.onclick = () => {
+  modal.classList.remove("show");
+  setTimeout(() => modal.style.display = "none", 300);
+};
+
 
   /* DATA */
   const track = document.getElementById("liveTrack");
@@ -53,8 +62,7 @@ setTimeout(() => {
   ];
 
   /* AI AVATAR (INDONESIAN FACE STYLE) */
-  function avatarUrl() {
-    function avatarUrl() {
+function avatarUrl() {
   const gender = Math.random() > 0.5 ? "male" : "female";
   return `https://thispersondoesnotexist.com/image?${gender}&asian&${Date.now()}`;
 }
@@ -131,5 +139,6 @@ function boomConfetti() {
     setTimeout(() => piece.remove(), 1000);
   }
 }
+
 
 
