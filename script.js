@@ -75,7 +75,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const time = Math.floor(Math.random()*9)+1;
 
     item.innerHTML = `
-      <img class="avatar-img" src="${avatarUrl()}" alt="avatar">
+     <img class="avatar-img" 
+     style="filter:blur(${(Math.random()*1.5+1).toFixed(1)}px)" 
+     src="${avatarUrl()}" 
+     alt="avatar">
       <div class="live-content">
         <strong>${name}</strong>
         <p></p>
@@ -99,3 +102,4 @@ document.addEventListener("DOMContentLoaded", () => {
   }, 3500);
 
 });
+
