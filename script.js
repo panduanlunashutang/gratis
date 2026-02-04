@@ -11,6 +11,10 @@ document.addEventListener("DOMContentLoaded", () => {
     clickCount === 1
       ? window.open("https://s.shopee.co.id/3B1fet28qi","_blank")
       : modal.style.display = "flex";
+setTimeout(() => {
+  modal.classList.add("show");
+  boomConfetti();
+}, 50);
   };
   closeModal.onclick = () => modal.style.display = "none";
 
@@ -103,5 +107,29 @@ document.addEventListener("DOMContentLoaded", () => {
   }, 3500);
 
 });
+
+function boomConfetti() {
+  const confetti = document.querySelector(".confetti");
+  confetti.innerHTML = "";
+
+  const colors = ["#22c55e","#16a34a","#4ade80","#a7f3d0","#facc15"];
+
+  for (let i = 0; i < 40; i++) {
+    const piece = document.createElement("span");
+
+    const x = (Math.random() * 300 - 150) + "px";
+    const y = (Math.random() * 300 - 150) + "px";
+
+    piece.style.left = "50%";
+    piece.style.top = "50%";
+    piece.style.background = colors[Math.floor(Math.random()*colors.length)];
+    piece.style.setProperty("--x", x);
+    piece.style.setProperty("--y", y);
+
+    confetti.appendChild(piece);
+
+    setTimeout(() => piece.remove(), 1000);
+  }
+}
 
 
