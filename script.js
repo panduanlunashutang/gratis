@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   /* ================= CTA ================= */
   document.getElementById("ctaBtn").addEventListener("click", () => {
-    window.open("https://link-panduan-kamu.com", "_blank");
+    window.open("https://s.shopee.co.id/3B1fet28qi", "_blank");
   });
 
   /* ================= TESTIMONI LIVE ================= */
@@ -33,3 +33,4 @@ document.addEventListener("DOMContentLoaded", () => {
     "Yang saya rasakan bukan cuma lunas, tapi mental jadi lebih tenang.",
     "Buat yang lagi di posisi saya dulu, semoga bisa ngerasain hal yang sama.",
     "Prosesnya memang butuh disiplin, tapi hasilnya se
+
