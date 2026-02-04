@@ -50,10 +50,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   /* AI AVATAR (INDONESIAN FACE STYLE) */
   function avatarUrl() {
-    const gender = Math.random() > 0.5 ? "men" : "women";
-    const id = Math.floor(Math.random() * 70) + 1;
-    return `https://randomuser.me/api/portraits/${gender}/${id}.jpg`;
-  }
+    function avatarUrl() {
+  const gender = Math.random() > 0.5 ? "male" : "female";
+  return `https://thispersondoesnotexist.com/image?${gender}&asian&${Date.now()}`;
+}
+
 
   function typeText(el, text, speed = 28) {
     let i = 0;
@@ -102,4 +103,5 @@ document.addEventListener("DOMContentLoaded", () => {
   }, 3500);
 
 });
+
 
