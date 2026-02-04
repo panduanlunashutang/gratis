@@ -281,6 +281,36 @@ body {
   transition: filter .3s ease;
 }
 
+/* ===== CONFETTI EXPLOSION ===== */
+.confetti {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+.confetti span {
+  position: absolute;
+  width: 8px;
+  height: 14px;
+  opacity: .9;
+  animation: confettiBoom 900ms ease-out forwards;
+}
+
+@keyframes confettiBoom {
+  0% {
+    transform: translate(0,0) rotate(0);
+    opacity: 1;
+  }
+  100% {
+    transform:
+      translate(var(--x), var(--y))
+      rotate(720deg);
+    opacity: 0;
+  }
+}
+
 
 
 
