@@ -193,6 +193,7 @@ body {
   display:none;
   justify-content:center;
   align-items:center;
+    padding: 0 !important;
 }
 
 .modal-box {
@@ -227,6 +228,7 @@ body {
   color:#fff;
   cursor:pointer;
 }
+
 
 
 
