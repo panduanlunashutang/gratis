@@ -196,7 +196,7 @@ body {
 }
 
 .modal-box {
-  background:#064e3b;
+  background:linear-gradient(135deg,#022c22,#064e3b,#0f766e,#065f46);
   padding:24px;
   border-radius:20px;
   width:90%;
@@ -227,6 +227,7 @@ body {
   color:#fff;
   cursor:pointer;
 }
+
 
 
 
