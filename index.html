@@ -1,54 +1,68 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
   <title>40 Hari Lunas Hutang</title>
-
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- HERO -->
-  <header class="hero">
-    <h1>40 HARI LUNAS HUTANG</h1>
+<header class="hero">
+  <h1 class="glow-title">40 HARI LUNAS HUTANG</h1>
 
-    <div class="promo-text">
-      Hutang ratusan juta <b>lunas dalam 40 hari</b><br>
-      tanpa modal • tanpa resiko • <span class="highlight">100% halal</span>
+  <div class="promo-text">
+    Hutang ratusan juta <b>lunas dalam 40 hari</b><br>
+    tanpa modal • tanpa resiko • <span class="highlight">100% halal</span>
+  </div>
+
+  <div class="hero-image">
+    <div class="light-anim"></div>
+    <img src="vanapro.webp" alt="Pasangan Indonesia">
+  </div>
+
+  <button id="ctaBtn" class="cta-btn pulse">
+    GABUNG KOMUNITAS GRATIS
+  </button>
+
+  <small class="trust-note">
+    Bukan pinjaman • Tidak minta data • Tanpa biaya
+  </small>
+</header>
+
+<section class="live-section">
+  <div class="live-box">
+    <div class="live-header">
+      <span>Testimoni Nyata Peserta</span>
+      <span class="live-badge">
+        ● LIVE <b id="liveCounter">128</b> orang
+      </span>
     </div>
 
-    <!-- IMAGE + GLOW -->
-    <div class="hero-image">
-      <div class="image-glow"></div>
-      <img src="vanapro.webp" alt="Ilustrasi Solusi Hutang" />
+    <div class="live-list">
+      <div id="liveTrack"></div>
     </div>
+  </div>
+</section>
 
-    <button id="ctaBtn" class="cta-btn">
-      LIHAT PANDUAN GRATIS
-    </button>
+<!-- MODAL -->
+<div id="modal" class="modal">
+  <div class="modal-box">
+    <h2>🎉 Selamat!</h2>
+    <p>
+      Anda resmi bergabung dengan<br>
+      <b>Komunitas Lunas Hutang Pro</b><br><br>
+      Silakan download buku panduan di bawah ini 👇
+    </p>
 
-    <small class="trust-note">
-      Bukan pinjaman • Tidak minta data • Tanpa biaya tersembunyi
-    </small>
-  </header>
+    <a href="#" class="download-btn">
+      DOWNLOAD BUKU
+    </a>
 
-  <!-- TESTIMONI LIVE -->
-  <section class="live-section">
-    <div class="live-box">
-      <div class="live-header">
-        <span>Testimoni Nyata Peserta</span>
-        <span class="live-badge">● LIVE</span>
-      </div>
+    <button class="close-modal">Tutup</button>
+  </div>
+</div>
 
-      <div class="live-list">
-        <div id="liveTrack"></div>
-      </div>
-    </div>
-  </section>
-
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
-
-
