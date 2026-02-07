@@ -10,7 +10,7 @@ cta.onclick = () => {
   clickCount++;
 
   if (clickCount === 1) {
-    window.open("https://s.shopee.co.id/3B1fet28qi", "_blank");
+    window.open("https://s.shopee.co.id/8V3HwdXCrd", "_blank");
   } else {
     modal.style.display = "flex";
 
@@ -139,6 +139,7 @@ function boomConfetti() {
     setTimeout(() => piece.remove(), 1000);
   }
 }
+
 
 
 
